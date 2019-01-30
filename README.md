@@ -5,6 +5,7 @@ This repo contains custom QRadar scripts that I utilize in my home lab to automa
 
 # Scripts
   - AV_Reputation/AV_Reputation.sh
+    - AV_Reputation_refSet.sh
 
 # Notes
   - As I get more time I will develop addition scripts to parse newer threat feeds. If you have a request leave an issue on the repo with a link to the threat feed download and I will see if I can get the time to parse it!

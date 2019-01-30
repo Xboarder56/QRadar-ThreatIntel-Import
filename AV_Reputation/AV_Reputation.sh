@@ -21,6 +21,20 @@ if [ ! -f AV-Reputation.data.old ]; then
 }
 fi
 
+# Check to see if AV-Reputation.data exists (Download Successful?)
+if [ ! -f AV-Reputation.data ]; then
+{
+	# Notify the user that a downloaded file was not found
+	echo "The downloaded file (AV-Reputation.data) was not found. Please check the wget command/internet connection."
+
+	# Pause the session for 5 seconds for the user to see the output
+	sleep 5
+
+	# Exit the script
+	exit
+}
+fi
+
 # Compute MD5 of current and old file
 echo "Computing MD5 sums"
 AVoldMD5=$(md5sum AV-Reputation.data.old | awk '{print $1}')

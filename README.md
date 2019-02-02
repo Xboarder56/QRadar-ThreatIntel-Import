@@ -11,6 +11,7 @@ This repo contains custom QRadar scripts that I utilize in my home lab to automa
   - As I get more time I will develop addition scripts to parse newer threat feeds. If you have a request leave an issue on the repo with a link to the threat feed download and I will see if I can get the time to parse it!
 
 # Change Log
+  - 02-02-2019 - Created ET_TOR_Reputation script for importing known TOR nodes/relays. This script will parse the snort rule (.rules) file and upload all IPs to a reference set. 
   - 01-29-2019 - Created a reference set version of (AV_Reputation) import script. This allows for avoiding the deploy changes and provides better performance.
   - 01-28-2019 - Initial Upload of AV_Reputation (AlienVault) import script.
 

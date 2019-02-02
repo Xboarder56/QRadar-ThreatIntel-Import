@@ -9,6 +9,9 @@ wget -nv -O AV-Reputation.data http://reputation.alienvault.com/reputation.data
 # Get script location
 scriptDir=$(pwd)
 
+# Compute Date Timestamp
+fileDateName=$(date +"%Y%m%d_%H%M%S")
+
 # Reference Set Name
 refSetName=AV_Reputation
 
@@ -51,6 +54,7 @@ if [ ! -f .AV-Reputation.refSet ]; then
 	# Create placeholder file
   touch .AV-Reputation.refSet
 	echo "# AV-Reputation.refSet" >> .AV-Reputation.refSet
+	  echo "# Created - ($fileDateName)" >> .AV-Reputation.refSet
 	echo "# This file is used to let the script know that the reference set ($refSetName) is created already." >> .AV-Reputation.refSet
 
 	# Create the

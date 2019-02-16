@@ -12,7 +12,7 @@ This repo contains custom QRadar scripts that I utilize in my home lab to automa
 # Cron Job Setup (Example: ET_Tor)
 1. crontab -l > cronfile
 2. vi cronfile
-3. 0 0 * * 4 /opt/scripts/ET_Reputation/ET_TOR_Reputation_refSet.sh
+3. 0 0 * * 4 "cd /opt/scripts/ET_Reputation && ./ET_TOR_Reputation_refSet.sh"
 4. crontab cronfile
 
 # Notes
